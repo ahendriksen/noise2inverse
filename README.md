@@ -29,6 +29,8 @@ The notebooks describe how to use the package:
 - 04_evaluate.ipynb: Applies the trained network to the noisy reconstructions to obtain a denoised output.
 - 05_metrics.ipynb: Describes metric calculation.
 
+Metrics and results may slightly differ from reported results in
+paper: the network was retrained using this clean up code.
 
 ## Data
 
