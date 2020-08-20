@@ -66,7 +66,7 @@ setup(
     entry_points='''
         [console_scripts]
     ''',
-    packages=find_packages(),
+    packages=find_packages(include=['noise2inverse']),
     package_dir={'noise2inverse': 'noise2inverse'},
     setup_requires=setup_requirements,
     test_suite='tests',
