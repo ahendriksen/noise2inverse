@@ -22,3 +22,5 @@ from . import fig
 from . import noise
 from . import tiffs
 from . import tomo
+from .unet import UNet
+from .dncnn import DnCNN
