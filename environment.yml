@@ -22,8 +22,8 @@ dependencies:
 # Tomography
 - foam_ct_phantom
 - tomopy
-- astra-toolbox=1.9.0.dev11
-- libastra=1.9.0.dev11
+- astra-toolbox=1.9.9.dev6
+- libastra=1.9.9.dev6
 - pip:
-  - git+https://github.com/ahendriksen/tomosipo.git@3d4aab43a64effb1635fa43880aac82e73ec6b43
+  - git+https://github.com/ahendriksen/tomosipo.git@v0.3.1
   - bm3d

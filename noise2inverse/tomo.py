@@ -88,11 +88,10 @@ def filter_proj_data(sino):
     return filtered
 
 
-def fbp(vd, pg, sino, **kwargs):
+def fbp(A, sino):
     # Filter
     filtered = filter_proj_data(
         torch.from_numpy(sino),
     ).detach().numpy()
     # Reconstruct
-    pd = ts.data(pg, filtered)
-    ts.backward(vd, pd, **kwargs)
+    return A.T(filtered)

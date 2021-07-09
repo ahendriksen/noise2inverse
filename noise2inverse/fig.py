@@ -23,8 +23,7 @@ def plot_imgs(width=None, vmin=None, vmax=None, **kwargs):
 
     for ax, (label, img) in zip(grid, kwargs.items()):
         # Remove ticks, splines
-        ax.set_xticks([], [])
-        ax.set_yticks([], [])
+        ax.axis('off')
         for s in ax.spines.values():
             s.set_visible(False)
 
