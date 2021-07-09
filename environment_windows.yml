@@ -1,0 +1,28 @@
+name: noise2inverse-new
+channels:
+- pytorch
+- defaults
+- conda-forge
+- astra-toolbox/label/dev
+- aahendriksen
+dependencies:
+- python=3.7
+- pip
+- ipython
+- ipykernel
+# MS-D, CUDA, pytorch
+- cudatoolkit=10.0
+# plotting and utilities
+- scikit-image
+- matplotlib
+- seaborn
+- tifffile
+- tqdm
+# Tomography
+- foam_ct_phantom
+- tomopy
+- astra-toolbox=1.9.9.dev6
+- libastra=1.9.9.dev6
+- pip:
+  - git+https://github.com/ahendriksen/tomosipo.git@v0.3.1
+  - bm3d
